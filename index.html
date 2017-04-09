@@ -7,7 +7,29 @@
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
 </head>
 <body>
+<style>
+
+  #webimg {
+    display:none;
+  }
+
+  #webimg img {
+    width:100%;
+  }
+
+@media (max-width:500px) {
+  #webgl {
+    display:none;
+  }
+  #webimg {
+    display:block;
+  }
+
+}
+
+</style>
 <div id="webgl"></div>
+<div id="webimg"><img src="mobile.png" alt=""></div>
 
 <!-- popup -->
 <!-- <div id="popup" style="display:none;">
